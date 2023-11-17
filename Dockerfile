@@ -2,9 +2,9 @@ FROM python:3.8
 
 WORKDIR /app
 
-COPY app.py ./app
-COPY best_model.pkl ./app
-COPY requirements.txt ./app
+COPY app.py ./
+COPY best_model.pkl ./
+COPY requirements.txt ./
 
 RUN pip install --no-cache-dir -r requirements.txt
 
